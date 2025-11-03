@@ -85,6 +85,14 @@ class Bravo7NoEndEffectorLoader(RobotLoader):
     ref_posture = "standing"
     free_flyer = False
 
+class Bravo7NoEndEffectorV2Loader(RobotLoader):
+    path = "bravo7_description"
+    urdf_filename = "bravo7_no_ee_v2.urdf"
+    urdf_subpath = "urdf"
+    srdf_filename = "bravo7_no_ee_v2.srdf"
+    ref_posture = "standing"
+    free_flyer = False
+
 
 class Bravo7GripperLoader(RobotLoader):
     path = "bravo7_description"
@@ -447,6 +455,7 @@ ROBOTS = {
     "b1": B1Loader,
     "bravo7_gripper": Bravo7GripperLoader,
     "bravo7_no_ee": Bravo7NoEndEffectorLoader,
+    "bravo7_no_ee_v2": Bravo7NoEndEffectorV2Loader,
     "falcon_bravo7_no_ee": FalconBravo7NoEndEffectorLoader,
     "falcon_bravo7_gripper": FalconBravo7GripperLoader,
     "bluevolta_bravo7_no_ee": BluevoltaBravo7NoEndEffectorLoader,
