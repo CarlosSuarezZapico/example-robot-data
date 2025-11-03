@@ -7,6 +7,8 @@ try:
 except ImportError:
     pybullet = False
 
+import sys
+sys.path.insert(0, "/home/example-robot-data/python")
 from example_robot_data import load_full
 
 
