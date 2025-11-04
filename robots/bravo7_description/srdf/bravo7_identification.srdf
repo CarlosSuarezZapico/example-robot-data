@@ -28,7 +28,6 @@
     <end_effector name="contact_point" parent_link="link7" group="arm"/>
 
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="end_effector_ball" link2="force_torque_sensor" reason="Never"/>
     <disable_collisions link1="end_effector_ball" link2="link4" reason="Never"/>
     <disable_collisions link1="end_effector_ball" link2="link5" reason="Never"/>
     <disable_collisions link1="end_effector_ball" link2="link6" reason="Never"/>
