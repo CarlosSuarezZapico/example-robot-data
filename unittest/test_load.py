@@ -67,6 +67,9 @@ class RobotTestCase(unittest.TestCase):
     
     def test_bravo7_no_ee_v2(self):
         self.check("bravo7_no_ee_v2", 9, 6)
+    
+    def test_bravo7_identification(self):
+        self.check("bravo7_identification", 9, 6)
 
     def test_falcon_bravo7_no_ee(self):
         self.check("falcon_bravo7_no_ee", 16, 12)
